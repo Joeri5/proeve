@@ -12,5 +12,11 @@ html{
 body{
   font-size:2rem;
   font-family: 'Open Sans', sans-serif;
-  background-color:#EDE4E0;
+  color: white; 
+  background-color: black;
+}
+
+.routes{
+  color:white;
+  text-decoration:none;
 }

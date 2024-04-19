@@ -1,13 +1,13 @@
 import "./globals.css";
-import Navigation from "../components/navigationbar/navigationbar";
-import React from 'react';
+import Link from "next/link"
 
-const Page: React.FC = () => {
+import Navbar from "../components/navigationbar/Navbar"
+
+export default function Page() {
   return (
-    <header>
-      <Navigation /> {/* Rendering the imported content component */}
-    </header>
-  );
-};
-
-export default Page;
+    <body>
+      <Navbar/>
+      
+    </body>
+  )
+}

@@ -5,7 +5,9 @@ const routenames = [
     {name: "Join Glue", path: routes.joinglue,},
     {name: "About", path: routes.about,},
     {name: "Visit", path: routes.visit,},
-    {name: "Map", path: routes.map,}
+    {name: "Map", path: routes.map,},
+    {name: "Login", path: routes.login,},
+    {name: "Signup", path: routes.signup,}
 ]
 
 export default routenames;

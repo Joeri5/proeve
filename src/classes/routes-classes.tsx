@@ -4,6 +4,8 @@ const routes = {
     about: "/about",
     visit: "/visit",
     map: "/map",
+    login: "/login",
+    signup: "/signup",
 }
 
 export default routes;

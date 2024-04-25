@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "fs-fs": "^1.0.0",
+    "fs-js": "^1.0.6",
     "next": "14.2.1",
     "next-link": "^2.0.0",
     "next-preload-headers": "^3.0.4",

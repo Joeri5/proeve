@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <body>
       <Navbar/>
-      
+      <h1>test</h1>
     </body>
   )
 }

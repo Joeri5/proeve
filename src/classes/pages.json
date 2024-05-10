@@ -1,0 +1,38 @@
+{
+    "home": {
+      "path": "/",
+      "title": "Home Page",
+      "component": "HomePage"
+    },
+    "joinglue": {
+      "path": "/joinglue",
+      "title": "Join Glue Page",
+      "component": "JoinGluePage"
+    },
+    "about": {
+      "path": "/about",
+      "title": "About Page",
+      "component": "AboutPage"
+    },
+    "visit": {
+      "path": "/visit",
+      "title": "Visit Page",
+      "component": "VisitPage"
+    },
+    "map": {
+      "path": "/map",
+      "title": "Map Page",
+      "component": "MapPage"
+    },
+    "login": {
+      "path": "/login",
+      "title": "login page",
+      "component": "login"
+    },
+    "signup": {
+      "path": "/signup",
+      "title": "sign up page",
+      "component": "sign up"
+    }
+  }
+  

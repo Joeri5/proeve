@@ -1,16 +1,17 @@
 import React from "react";
 import Link from 'next/link'
-import routenames from "../../classes/routenames-classes";
 
 import "../../app/globals.css";
+import { PageData } from "@/data/pageData";
+import { PageDataProps } from "@/data/types/pageData.t";
 
 export default function Navigationbar() {
-  console.log(routenames)
   return (
     <nav>
-      {routenames.map(route => (
-        <Link key={route.path} href={route.path} className="routes">
-          <p>{route.name}</p>
+      {PageData.map((data: PageDataProps) => (
+        <Link key={data.path} href={data.path} className="routes">
+          <p>{data.title}</p>
+          {data?.test}
         </Link>
       ))}
     </nav>

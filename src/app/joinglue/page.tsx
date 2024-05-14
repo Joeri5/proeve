@@ -1,4 +1,4 @@
-import informationglue from "../../classes/information--joinglue--classes";
+import informationglue from "../../data/information--joinglue--classes";
 
 export default function Joinglue() {
   const joinglueinformation = informationglue.slice(0, 1).map((joinglueinformation, index) => (

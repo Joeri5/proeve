@@ -6,18 +6,12 @@ import { usePathname } from 'next/navigation'
 
 import { PageData } from "@/data/pageData"
 import { PageDataProps } from "@/data/types/pageData.t"
-import { useState } from "react"
 
 export default function login() {
 
   const pathname = usePathname();
   console.log(pathname)
 
-  const [pageContent, setPageContent] = useState(0);
-
-  const currentPage = () => {
-    setPageContent(pathname)
-  }
 
   return (
     <body>
@@ -25,10 +19,9 @@ export default function login() {
         <div>
           {data.path === pathname && (
             <>
-            {data?.test}
+            {data.test || "no page content"}
             </>
           )}
-          
         </div>
         ))}
     </body>

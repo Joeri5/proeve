@@ -11,7 +11,7 @@ export default function Navigationbar() {
       {PageData.map((data: PageDataProps) => (
         <Link key={data.path} href={data.path} className="routes">
           <p>{data.title}</p>
-          {data?.test}
+          {data?.content}
         </Link>
       ))}
     </nav>

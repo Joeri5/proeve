@@ -5,7 +5,7 @@ export const PageData: PageDataProps[] = [
       path: "/",
       title: "Home Page",
       component: "HomePage",
-      test: (
+      content: (
         <div>
           testje
         </div>
@@ -35,7 +35,7 @@ export const PageData: PageDataProps[] = [
       path: "/login",
       title: "login page",
       component: "login",
-      test: (
+      content: (
         <div>
           wajoo
         </div>

@@ -19,7 +19,7 @@ export default function login() {
         <div>
           {data.path === pathname && (
             <>
-            {data.test || "no page content"}
+            {data.content || "no page content"}
             </>
           )}
         </div>

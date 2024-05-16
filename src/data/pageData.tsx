@@ -34,7 +34,12 @@ export const PageData: PageDataProps[] = [
     {
       path: "/login",
       title: "login page",
-      component: "login"
+      component: "login",
+      test: (
+        <div>
+          wajoo
+        </div>
+      )
     },
     {
       path: "/signup",

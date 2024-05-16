@@ -1,9 +1,10 @@
 import ContentDividderWrapperComponent from "@/components/contentDividerWrapperComponent/contentDividerWrapperComponent";
-export default function Map() {
+export default function Member() {
+    
     return (
       <>
       <section>
-      <ContentDividderWrapperComponent/>
+      <ContentDividderWrapperComponent></ContentDividderWrapperComponent>
       </section>
       </>
     )

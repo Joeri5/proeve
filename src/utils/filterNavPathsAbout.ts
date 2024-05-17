@@ -1,3 +1,4 @@
+/*deze import */
 import {SidePageDataProps} from  "../data/types/pageData.t"
 
 const AllowRoutingsPathsAbout = [

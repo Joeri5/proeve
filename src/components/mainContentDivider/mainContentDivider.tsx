@@ -23,23 +23,6 @@ const PageContent = ({ pageData }: { pageData: PageDataProps[] }) => {
   );
 };
 
-const sidePageContent = ({ extraPaths }: { extraPaths: PageDataProps[] }) => {
-  const sidePathname = usePathname();
-
-  return (
-    <div>
-      {extraPaths.map((extraData) => (
-        <div key={extraData.path}>
-          {extraData.path === sidePathname && (
-            <>
-              {extraData.content || "no page content"}
-            </>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-};
 
 const PageWrapper = () => {
   return (

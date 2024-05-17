@@ -1,4 +1,4 @@
-import ContentDividderWrapperComponent from "@/components/contentDividerWrapperComponent/contentDividerWrapperComponent";
+import ContentDividderWrapperComponent from "@/components/mainContentDividerWrapperComponent/mainContentDividerWrapperComponent";
 
 export default function Joinglue() {
   return (

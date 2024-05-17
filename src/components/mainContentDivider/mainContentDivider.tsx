@@ -23,17 +23,34 @@ const PageContent = ({ pageData }: { pageData: PageDataProps[] }) => {
   );
 };
 
-const PageWrapper = () => {
+const sidePageContent = ({ extraPaths }: { extraPaths: PageDataProps[] }) => {
+  const sidePathname = usePathname();
+
   return (
-    <PageContent pageData={PageData} />
+    <div>
+      {extraPaths.map((extraData) => (
+        <div key={extraData.path}>
+          {extraData.path === sidePathname && (
+            <>
+              {extraData.content || "no page content"}
+            </>
+          )}
+        </div>
+      ))}
+    </div>
   );
 };
 
-const extraPathsWrapper = () => {
+const PageWrapper = () => {
   return (
-    <PageContent pageData={extraPaths} />
+    <>
+      <PageContent pageData={PageData} />
+    </>
   );
 };
+
+
+
 
 export default PageWrapper;
 

@@ -1,6 +1,10 @@
 import { PageDataProps, SidePageDataProps } from "./types/pageData.t";
 import Link from "next/link";
 
+/*import components*/
+import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
+
+
 export const PageData: PageDataProps[] = [
   {
     path: "/",
@@ -35,7 +39,8 @@ export const PageData: PageDataProps[] = [
           about GLUE
         </h1>
         <p>A four days design-route for Amsterdam designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. GLUE amsterdam connected by design connects all locations and provides a substantive and attractive program for colleagues and the public. Independence is essential, GLUE does not commit to one party, but all of them. Starting designers, knowledge institutes, renowned designers, and large agencies, diverse and ground floor suits Amsterdam, even though we sometimes have to climb a steep staircase. GLUE gives a profile to Amsterdam design and wants to connect the sector better and make it more discoverable. All participants have a dot on the map; we encourage them to organize something sensational and relevant during GLUE amsterdam connected by design.</p>
-      </div>
+        <SidebarNavAboutComponent/>
+    </div>
     )
   },
   {

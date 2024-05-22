@@ -13,7 +13,8 @@ export interface SidePageDataProps {
     content?: React.ReactNode;
 }
 
-export interface InfoPageDataProps{
-   pageTitle : string;
-   subtext: string; 
+export interface InfoPageDataProps {
+    pageTitle: string;
+    subtext: string;
+    path?: string;
 }

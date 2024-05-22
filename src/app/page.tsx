@@ -6,12 +6,6 @@ import ContentDividerWrapper from "../components/mainContentDividerWrapperCompon
 
 export default function Page() {
 
-  const test = () => {
-    console.log(ContentDividerWrapper);
-  }
-
-  test()
-
   return (
     <>
       <Navbar/>

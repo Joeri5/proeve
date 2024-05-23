@@ -1,11 +1,11 @@
-import MainContentDividderWrapperComponent from "@/components/mainContentDividerWrapperComponent/mainContentDividerWrapperComponent";
+import SideContentDividderWrapperComponent from "@/components/sideContentDividerWrapper/sideContentDividerWrapper";
 
 export default function GlueTv() {
-    return (
-      <>
+  return (
+    <>
       <section>
-        
+        <SideContentDividderWrapperComponent  />
       </section>
-      </>
-    )
+    </>
+  )
 }

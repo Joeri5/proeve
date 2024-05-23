@@ -1,10 +1,10 @@
-import ContentDividderWrapperComponent from "@/components/mainContentDividerWrapperComponent/mainContentDividerWrapperComponent";
+import SideContentDividderWrapperComponent from "@/components/sideContentDividerWrapper/sideContentDividerWrapper";
 export default function Member() {
     
     return (
       <>
       <section>
-      <ContentDividderWrapperComponent></ContentDividderWrapperComponent>
+        <SideContentDividderWrapperComponent/>
       </section>
       </>
     )

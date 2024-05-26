@@ -25,7 +25,7 @@
     background-image: url("../../public//GLUE_G.svg");
     background-size:100px;
     background-repeat:no-repeat;
-    background-position: center;
+    background-position: 50px 50px;
   }
   
   .part2 {
@@ -35,7 +35,7 @@
     background-image: url("../../public//GLUE_L.svg");
     background-size:100px;
     background-repeat:no-repeat;
-    background-position: center;
+    background-position: calc(100% - 50px) 50px;
   }
   
   .part3 {
@@ -45,7 +45,7 @@
     background-image: url("../../public//GLUE_U.svg");
     background-size:100px;
     background-repeat:no-repeat;
-    background-position: center;
+    background-position: 50px calc(100% - 50px);
   }
   
   .part4 {
@@ -55,7 +55,7 @@
     background-image: url("../../public//GLUE_E.svg");
     background-size:100px;
     background-repeat:no-repeat;
-    background-position: center;
+    background-position: calc(100% - 50px) calc(100% - 50px);
   }
   
   .homepage__layout {

@@ -1,9 +1,15 @@
+
+/*import data types*/
 import { PageDataProps, SidePageDataProps, InfoPageDataProps } from "./types/pageData.t";
 import Link from "next/link";
 
 /*import components*/
 import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
 import SidebarNavPartnersComponent from "../components/SidebarNavPartnersComponent/SidebarNavPartnersComponent"
+import SearchFunction from "../components/searchFunction/searchFunction"
+
+/*import css files*/
+import "../app/globals.css";
 
 export const PageData: PageDataProps[] = [
   {
@@ -12,7 +18,7 @@ export const PageData: PageDataProps[] = [
     component: "HomePage",
     content: (
       <div>
-        testje
+       
       </div>
     )
   },
@@ -21,7 +27,7 @@ export const PageData: PageDataProps[] = [
     title: "Join Glue Page",
     component: "JoinGluePage",
     content: (
-      <div className="pageLayout">
+      <div className="pageLayout ">
         <h1>sign up / log in</h1>
         <div></div>
         <p>GLUE is a community for designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. This year the design route takes place from 19 – 22 September in 2024.Would you like to be part of the GLUE Community? A Membership is the way to go. During the year, all kind of events where you can meet the industry are organised. Monthly Community Cocktails and the opening party at Paradiso, to mention a few. You can become a member at any time. Want to participate in the GLUE design route of September in addition to becoming a member? Sign up as a participant and you are automatically a GLUE member too. Please subscribe before 1st of May 2024. It is possible to choose to be a GLUE member first, and decide later if you also want to also participate in the route. You can switch to a Participant Membership before 1st of May 2024. (You only pay the difference between a membership and the participation fee.)
@@ -65,6 +71,10 @@ export const PageData: PageDataProps[] = [
     title: "Map Page",
     component: "MapPage"
   },
+  
+]
+
+export const extraPaths: SidePageDataProps[] = [
   {
     path: "/login",
     title: "login page",
@@ -81,10 +91,7 @@ export const PageData: PageDataProps[] = [
     path: "/signup",
     title: "sign up page",
     component: "sign up"
-  }
-]
-
-export const extraPaths: SidePageDataProps[] = [
+  },
   {
     path: "/member",
     title: "Members page",
@@ -355,6 +362,17 @@ export const extraPaths: SidePageDataProps[] = [
       </div>
     )
   },
+  {
+    path: "/search",
+    title: "search page",
+    component: "search",
+    content: (
+      <div className="pageLayout">
+        <SearchFunction/>
+      </div>
+    )
+  },
+
 ]
 
 export const pageInfo: InfoPageDataProps[] = [

@@ -2,10 +2,15 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { PageDataProps, SidePageDataProps } from "@/data/types/pageData.t";
 
 // Import your page data
 import { PageData, extraPaths } from "@/data/pageData";
+
+import "../../app/globals.css"
+
+import SearchIcon from "../../../public/images/icons/search.png"
 
 // Define the type for search results
 type SearchResult = {
@@ -43,7 +48,7 @@ const searchContent = (searchTerm: string): SearchResult[] => {
             path: page.path,
             title: page.title,
             component: page.component,
-            contentSnippet: contentString.substring(0, 100) + "...", // First 100 characters of the content
+            contentSnippet: contentString.substring(0, 150) + "...", // First 100 characters of the content
           });
         }
       }
@@ -68,26 +73,32 @@ const SearchComponent: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>Search Page</h1>
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Enter search term"
-      />
-      <button onClick={handleSearch}>Search</button>
-      <div>
+    <div className="searchForm">
+      <section className="searchForm__inputsection">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search. . ."
+
+          className="searchForm__input"
+        />
+        <button onClick={handleSearch} className="searchForm__button">
+          <Image src={SearchIcon} alt="search icon" className="searchForm__button__icon" />
+        </button>
+      </section>
+
+      <div className="searchForm__results">
         {results.length > 0 ? (
           results.map((result, index) => (
-            <div key={index}>
-              <h2>{result.title}</h2>
-              <p>{result.contentSnippet}</p>
-              <Link href={result.path}>Read more</Link>
-            </div>
+            <div key={index} className="searchForm__results__section">
+              <h2 className="searchForm__results__section__title">{result.title}</h2>
+              <p className="searchForm__results__section__text">{result.contentSnippet}</p>
+              <Link href={result.path} className="searchForm__results__section__link">Read More</Link>
+              </div>
           ))
         ) : (
-          <p>No results found</p>
+          <p className="searchForm__results__noresults">No results found</p>
         )}
       </div>
     </div>

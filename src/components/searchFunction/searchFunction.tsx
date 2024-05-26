@@ -1,18 +1,15 @@
-'use client';
+'use client'
 
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { PageDataProps, SidePageDataProps } from "@/data/types/pageData.t";
-
-// Import your page data
 import { PageData, extraPaths } from "@/data/pageData";
 
 import "../../styles/searchpage.css"
 
 import SearchIcon from "../../../public/images/icons/search.png"
 
-// Define the type for search results
 type SearchResult = {
   path: string;
   title: string;
@@ -20,7 +17,6 @@ type SearchResult = {
   contentSnippet: string;
 };
 
-// Helper function to extract text content from React nodes
 const extractTextContent = (node: React.ReactNode): string => {
   if (typeof node === "string") {
     return node;
@@ -34,11 +30,9 @@ const extractTextContent = (node: React.ReactNode): string => {
   return "";
 };
 
-// Function to search through content
-const searchContent = (searchTerm: string): SearchResult[] => {
+const buildSearchResults = (searchTerm: string): SearchResult[] => {
   const results: SearchResult[] = [];
 
-  // Function to search in data and add results
   const searchInData = (data: Array<PageDataProps | SidePageDataProps>) => {
     data.forEach((page) => {
       if (page.content) {
@@ -48,27 +42,25 @@ const searchContent = (searchTerm: string): SearchResult[] => {
             path: page.path,
             title: page.title,
             component: page.component,
-            contentSnippet: contentString.substring(0, 150) + "...", // First 100 characters of the content
+            contentSnippet: contentString.substring(0, 150) + "...",
           });
         }
       }
     });
   };
 
-  // Search through main and extra page data
   searchInData(PageData);
   searchInData(extraPaths);
 
   return results;
 };
 
-// The Search Component
 const SearchComponent: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [results, setResults] = useState<SearchResult[]>([]);
 
   const handleSearch = () => {
-    const searchResults = searchContent(searchTerm);
+    const searchResults = buildSearchResults(searchTerm);
     setResults(searchResults);
   };
 
@@ -80,7 +72,6 @@ const SearchComponent: React.FC = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search. . ."
-
           className="searchForm__input"
         />
         <button onClick={handleSearch} className="searchForm__button">
@@ -94,8 +85,8 @@ const SearchComponent: React.FC = () => {
             <div key={index} className="searchForm__results__section">
               <h2 className="searchForm__results__section__title">{result.title}</h2>
               <p className="searchForm__results__section__text">{result.contentSnippet}</p>
-              <Link href={result.path} className="searchForm__results__section__link">Read More</Link>
-              </div>
+              <Link href={result.path} className="searchForm__results__section__link" key={result.path}>Read More</Link>
+            </div>
           ))
         ) : (
           <p className="searchForm__results__noresults">No results found</p>

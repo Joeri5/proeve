@@ -2,12 +2,12 @@
 /*import data types*/
 import { PageDataProps, SidePageDataProps, InfoPageDataProps } from "./types/pageData.t";
 import Link from "next/link";
+import Image from "next/image";
 
 /*import components*/
-import Navbar from "../components/navigationbar/Navbar"
 import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
 import SidebarNavPartnersComponent from "../components/SidebarNavPartnersComponent/SidebarNavPartnersComponent"
-import SearchFunction from "../components/searchFunction/searchFunction"
+import SearchComponent from "../components/searchFunction/searchFunction"
 
 /*import css files*/
 import "../app/globals.css";
@@ -237,7 +237,7 @@ export const extraPaths: SidePageDataProps[] = [
         <h1>mission statement</h1>
         <SidebarNavAboutComponent />
         <p>The power of local, connecting & inspiring
-          GLUE’s primary mission is to connect the local design community, consisting of designers, creatives, architects, brands, showrooms, galleries, academies, and other colleagues by providing spaces to meet and moments to share and connect. Secondary mission is to connect the general public with the design community, which happens during the three days of the design-route.
+          GLUEs primary mission is to connect the local design community, consisting of designers, creatives, architects, brands, showrooms, galleries, academies, and other colleagues by providing spaces to meet and moments to share and connect. Secondary mission is to connect the general public with the design community, which happens during the three days of the design-route.
 
           GLUE connects the members the whole year round, and opens the doors to the public each year in mid-September for a four days design route through Amsterdam. The three-day design route connects all GLUE locations and provides a substantive and attractive program for colleagues and the public.
           GLUE includes the whole scene; starting designers as well as renowned designers, small and big showrooms, hidden gems agencies and educational institutes. Smaller brands and individual creatives get exhibition space at a larger enterprise or hotel, these so called GLUE HUBS create new business relations for the members and make the program more challenging and diverse.
@@ -369,7 +369,7 @@ export const extraPaths: SidePageDataProps[] = [
     component: "search",
     content: (
       <div className="pageLayout">
-        <SearchFunction/>
+        
       </div>
     )
   },

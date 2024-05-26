@@ -8,7 +8,7 @@ import { PageDataProps, SidePageDataProps } from "@/data/types/pageData.t";
 // Import your page data
 import { PageData, extraPaths } from "@/data/pageData";
 
-import "../../app/globals.css"
+import "../../styles/searchpage.css"
 
 import SearchIcon from "../../../public/images/icons/search.png"
 

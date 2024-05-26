@@ -4,6 +4,7 @@ import { PageDataProps, SidePageDataProps, InfoPageDataProps } from "./types/pag
 import Link from "next/link";
 
 /*import components*/
+import Navbar from "../components/navigationbar/Navbar"
 import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
 import SidebarNavPartnersComponent from "../components/SidebarNavPartnersComponent/SidebarNavPartnersComponent"
 import SearchFunction from "../components/searchFunction/searchFunction"
@@ -17,8 +18,8 @@ export const PageData: PageDataProps[] = [
     title: "Home Page",
     component: "HomePage",
     content: (
-      <div>
-       
+      <div >
+      
       </div>
     )
   },

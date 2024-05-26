@@ -3,6 +3,7 @@ import Link from "next/link";
 
 /*import components*/
 import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
+import SidebarNavPartnersComponent from "../components/SidebarNavPartnersComponent/SidebarNavPartnersComponent"
 
 export const PageData: PageDataProps[] = [
   {
@@ -54,7 +55,7 @@ export const PageData: PageDataProps[] = [
         <h1>visit</h1>
         <div></div>
         <p>GLUE is a four-day design-route from and for Amsterdam designers, the general public, architects, brands, showrooms, galleries, academies, and other colleagues.
-        <br /><br /><Link href="/member">members</Link>
+          <br /><br /><Link href="/member">members</Link>
         </p>
       </div>
     )
@@ -165,7 +166,8 @@ export const extraPaths: SidePageDataProps[] = [
         <SidebarNavAboutComponent />
         <p>
           GLUE amsterdam connected by design is made possible by the support of our Founding and Cultural Partners. Their businesses are strongly tied with the culture and economy of Amsterdam. Who are they?
-        </p>
+        </p><br/>
+          <SidebarNavPartnersComponent />
       </div>
     )
   },
@@ -309,7 +311,7 @@ export const extraPaths: SidePageDataProps[] = [
     component: "Foundingpartnerspage",
     content: (
       <div className="pageLayout">
-        
+
       </div>
     )
   },
@@ -319,7 +321,7 @@ export const extraPaths: SidePageDataProps[] = [
     component: "communitypartnerspage",
     content: (
       <div className="pageLayout">
-        
+
       </div>
     )
   },
@@ -329,7 +331,7 @@ export const extraPaths: SidePageDataProps[] = [
     component: "mobilitypartnerspage",
     content: (
       <div className="pageLayout">
-        
+
       </div>
     )
   },
@@ -339,7 +341,7 @@ export const extraPaths: SidePageDataProps[] = [
     component: "fundingpartnerspage",
     content: (
       <div className="pageLayout">
-        
+
       </div>
     )
   },
@@ -349,7 +351,7 @@ export const extraPaths: SidePageDataProps[] = [
     component: "broadcastingpartnerspage",
     content: (
       <div className="pageLayout">
-        
+
       </div>
     )
   },

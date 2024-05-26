@@ -73,6 +73,23 @@
     font-weight: 300; /* Set font weight */
     opacity:100%;
     margin:0;
-   
   }
+
+  /* HEADER HOMEPAGE */
+  .searchIcon{
+    filter:invert(100%);
+    width:70px;
+    height:70px;
+  }
+
+  /* HOMEPAGE CONTENT */
+  .homepage__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:column;
+    padding:20px;
+  }
+  
+
   

@@ -293,6 +293,66 @@ export const extraPaths: SidePageDataProps[] = [
       </div>
     )
   },
+  {
+    path: "/culturalpartners",
+    title: "Cultural Partners",
+    component: "culturalpartnerspage",
+    content: (
+      <div className="pageLayout">
+
+      </div>
+    )
+  },
+  {
+    path: "/foundingpartners",
+    title: "Founding partners",
+    component: "Foundingpartnerspage",
+    content: (
+      <div className="pageLayout">
+        
+      </div>
+    )
+  },
+  {
+    path: "/communitypartners",
+    title: "Community Partners",
+    component: "communitypartnerspage",
+    content: (
+      <div className="pageLayout">
+        
+      </div>
+    )
+  },
+  {
+    path: "/mobilitypartners",
+    title: "mobility Partners",
+    component: "mobilitypartnerspage",
+    content: (
+      <div className="pageLayout">
+        
+      </div>
+    )
+  },
+  {
+    path: "/fundingpartners",
+    title: "funding Partners",
+    component: "fundingpartnerspage",
+    content: (
+      <div className="pageLayout">
+        
+      </div>
+    )
+  },
+  {
+    path: "/broadcastingpartners",
+    title: "broadcasting Partners",
+    component: "broadcastingpartnerspage",
+    content: (
+      <div className="pageLayout">
+        
+      </div>
+    )
+  },
 ]
 
 export const pageInfo: InfoPageDataProps[] = [

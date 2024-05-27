@@ -2,11 +2,11 @@
 
 import React from "react";
 import { usePathname } from 'next/navigation';
-import { PageData, extraPaths } from "@/data/pageData";
-import { PageDataProps } from "@/data/types/pageData.t";
+import { extraPaths } from "@/data/pageData";
+import { SidePageDataProps } from "@/data/types/pageData.t";
 
 
-const SidePageContent = ({ extraPaths }: { extraPaths: PageDataProps[] }) => {
+const SidePageContent = ({ extraPaths }: { extraPaths: SidePageDataProps[] }) => {
   const sidePathname = usePathname();
 
   return (

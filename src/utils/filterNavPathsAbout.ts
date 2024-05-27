@@ -2,6 +2,7 @@
 import {SidePageDataProps} from  "../data/types/pageData.t"
 
 const AllowRoutingsPathsAbout = [
+    "/about",
     "/meettheteam",
     "/glueparticipants2023",
     "/gluetv",

@@ -12,7 +12,7 @@ import SearchComponent from "../components/searchFunction/searchFunction"
 /*import css files*/
 import "../app/globals.css";
 import "../styles/navbar.css";
-
+import "../styles/joinglue.css"
 
 /*  IMPORT IMAGES   */
 import StedelijkMuseumImage from "../../public/images/partners/stedelijke .png"
@@ -48,14 +48,18 @@ export const PageData: PageDataProps[] = [
     component: "JoinGluePage",
     navClass: "joinglue__link",
     content: (
-      <div className="pageLayout ">
-        <h1>sign up / log in</h1>
-        <div></div>
+      <div className="pageLayout">
+        <div className="pageLayout__title ">
+          <h1>sign up / log in</h1>
+        </div>
+        <br />
         <p>GLUE is a community for designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. This year the design route takes place from 19 – 22 September in 2024.Would you like to be part of the GLUE Community? A Membership is the way to go. During the year, all kind of events where you can meet the industry are organised. Monthly Community Cocktails and the opening party at Paradiso, to mention a few. You can become a member at any time. Want to participate in the GLUE design route of September in addition to becoming a member? Sign up as a participant and you are automatically a GLUE member too. Please subscribe before 1st of May 2024. It is possible to choose to be a GLUE member first, and decide later if you also want to also participate in the route. You can switch to a Participant Membership before 1st of May 2024. (You only pay the difference between a membership and the participation fee.)
           <br /><br /><Link href="https://glue.amsterdam/cms/assets/pdf/GLUE_2024_acbd_lr.pdf">Download Bronchure Here</Link>
           <br /><br /><Link href="/member">more info about becoming a member and participant</Link>
+          <br /> <Link href="https://members.glue.amsterdam/sign-up/1">Signup directly</Link>
           <br /><br /><Link href="/login">login</Link>
         </p>
+        <div className="pageLayout__"></div>
       </div>
     )
   },
@@ -90,7 +94,7 @@ export const PageData: PageDataProps[] = [
     )
   },
   {
-    path: "/map",
+    path: "https://members.glue.amsterdam/",
     title: "Map",
     component: "MappPage",
     navClass: "map__link",
@@ -112,6 +116,35 @@ export const extraPaths: SidePageDataProps[] = [
     )
   },
   {
+    path: "/becomemember",
+    title: "becomemember",
+    component: "becomemember",
+    content: (
+      <div className="pageLayout">
+        <h1 className="pageLayout__title">members</h1>
+        <div></div>
+        <p>
+          Application deadline: 1 may 2023
+          <br />
+          <br />
+          1. Become a GLUE member
+          <br />
+          Become a GLUE member to connect with like-minded creatives from the Amsterdam design community. The yearly fee for a GLUE membership is €250.- per year, and €150.- for individual creatives.
+          You automatically become a member for 2 years. Once a year you get an invoice. Do you want to hear more or you need more information, please contact our Member coordinator; members@glue.amsterdam.
+          The GLUE team is happy to welcome you.
+          <br />
+          <br />
+          2. Become a GLUE participant
+
+          When you become a GLUE participant, it means you will join the GLUE Design Route in September. 
+          <br /><Link href="https://members.glue.amsterdam/">More information about the design route you find on the website. </Link>
+          <br />As a GLUE participant you are automatically also a GLUE member. The fee for the membership is included in the participation fee.
+          Depending on the size of your company, or your wishes, you can choose between 4 packages.
+        </p>
+      </div>
+    )
+  },
+  {
     path: "/signup",
     title: "sign up page",
     component: "sign up"
@@ -126,6 +159,14 @@ export const extraPaths: SidePageDataProps[] = [
         <div></div>
         <p>Loading...</p>
       </div>
+    )
+  },
+  {
+    path: "/about",
+    title: "About",
+    component: "AboutPage",
+    content: (
+      <></>
     )
   },
   {
@@ -335,10 +376,10 @@ export const extraPaths: SidePageDataProps[] = [
         <h1 className="pageLayout__title">Cultural Partners</h1>
         <SidebarNavAboutComponent />
         <div className="pageLayout__pageImage">
-        <Link href="https://www.stedelijk.nl/nl/">
-          <Image src={StedelijkMuseumImage} alt="" className="pagefundingImage" style={{ width: '35rem', height: 'auto' }} />
+          <Link href="https://www.stedelijk.nl/nl/">
+            <Image src={StedelijkMuseumImage} alt="" className="pagefundingImage" style={{ width: '35rem', height: 'auto' }} />
           </Link>
-        <Link href="https://waag.org/nl/"><Image src={WaagFutureLabImage} alt="" className="pagefundingImage" style={{ width: '35rem' }} /></Link>
+          <Link href="https://waag.org/nl/"><Image src={WaagFutureLabImage} alt="" className="pagefundingImage" style={{ width: '35rem' }} /></Link>
         </div>
       </div>
     )

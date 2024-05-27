@@ -13,10 +13,10 @@ import letterE from "../../img/GLUE_E.svg"
 export default function sideContentDividderWrapperComponent() {
   return (
     <div>
-      <Image src={letterG} className="letter letter_G" />
-      <Image src={letterL} className="letter letter_L" />
-      <Image src={letterU} className="letter letter_U" />
-      <Image src={letterE} className="letter letter_E" />
+      <Image src={letterG} className="letter letter_G" alt=""/>
+      <Image src={letterL} className="letter letter_L" alt=""/>
+      <Image src={letterU} className="letter letter_U" alt=""/>
+      <Image src={letterE} className="letter letter_E" alt=""/>
       <SideContentDivider />
     </div>
   );

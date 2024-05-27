@@ -1,0 +1,9 @@
+@import "./rootstyles/color.css";
+@import "./rootstyles/borders.css";
+@import "./rootstyles/links.css";
+@import "./rootstyles/typograpghy.css";
+
+.background{
+    background-color: var(--bs-black);
+    height:200%;
+}

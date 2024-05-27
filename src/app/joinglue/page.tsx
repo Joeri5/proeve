@@ -2,9 +2,9 @@ import ContentDividderWrapperComponent from "@/components/mainContentDividerWrap
 
 export default function Joinglue() {
   return (
-    <>
+    <main>
       <ContentDividderWrapperComponent/>
-    </>
+    </main>
   );
 }
 

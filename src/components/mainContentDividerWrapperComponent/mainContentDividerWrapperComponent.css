@@ -1,3 +1,54 @@
-.contentWrapper {
-    display: inline-grid;
+.letter{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    z-index: 999;
+}
+
+.letter_G {
+    translate: none; rotate: none; scale: none; transform: translate(0%, -50%); top: 50%; left: 0px;
+}
+
+.letter_L {
+    translate: none; rotate: none; scale: none; transform: translate(-50%, 0px); top: 0px; left: 50%;
+}
+
+.letter_U {
+    translate: none; rotate: none; scale: none; transform: translate(-50%, 0%); bottom: 0px; left: 50%;
+}
+
+.letter_E {
+    translate: none; rotate: none; scale: none; transform: translate(0px, 80px); bottom: 50%; right: 0px;
+}
+
+.middle {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 80% !important;
+}
+
+.top__bottom{
+    position: absolute;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    height: 60% !important;
+}
+
+.homeButton {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.homeButton > a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.homeButton > a:hover {
+    text-decoration: underline;
 }

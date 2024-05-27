@@ -17,6 +17,8 @@ export default function contentDividderWrapperComponent() {
       <Image src={letterL} className="letter letter_L"/>
       <Image src={letterU} className="letter letter_U"/>
       <Image src={letterE} className="letter letter_E"/>
+      <div className="horizontal-line middle"></div>
+      <div className="vertical-line top__bottom"></div>
       <ContentDivider />
     </div>
   );

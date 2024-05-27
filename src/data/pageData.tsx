@@ -8,10 +8,18 @@ import Image from "next/image";
 import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
 import SidebarNavPartnersComponent from "../components/SidebarNavPartnersComponent/SidebarNavPartnersComponent"
 import SearchComponent from "../components/searchFunction/searchFunction"
+import Carousel from "@/components/carousel/Carousel";
 
 /*import css files*/
 import "../app/globals.css";
 import "../styles/navbar.css";
+
+// import carousel data
+import slides from '../components/carousel/CarouselData.json'
+import slides2 from '../components/carousel/CarouselData2.json'
+import slides3 from '../components/carousel/CarouselData3.json'
+
+
 
 export const PageData: PageDataProps[] = [
   {
@@ -230,7 +238,12 @@ export const extraPaths: SidePageDataProps[] = [
       <div className="pageLayout">
         <h1>creative citizens of honour</h1>
         <SidebarNavAboutComponent />
-        <p>Three creative industry leaders have been chosen each year for their outstanding contribution to the city's social cohesion. Discover who they are!</p>
+        <p>
+          Three creative industry leaders have been chosen each year for their outstanding contribution to the city's social cohesion. Discover who they are!
+          <br /><br /><Link href="/2023">2023</Link>
+          <br /><br /><Link href="/2022">2022</Link>
+          <br /><br /><Link href="/2021">2021</Link>
+        </p>
       </div>
     )
   },
@@ -376,6 +389,36 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         
+      </div>
+    )
+  },
+  {
+    path: "/2023",
+    title: "2023",
+    component: "2023",
+    content: (
+      <div>
+        <Carousel data={slides} />
+      </div>
+    )
+  },
+  {
+    path: "/2022",
+    title: "2022",
+    component: "2022",
+    content: (
+      <div>
+        <Carousel data={slides2} />
+      </div>
+    )
+  },
+  {
+    path: "/2021",
+    title: "2021",
+    component: "2021",
+    content: (
+      <div>
+        <Carousel data={slides3} />
       </div>
     )
   },

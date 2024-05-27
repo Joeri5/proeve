@@ -101,6 +101,16 @@
   width: 100%;
   height: 2px;
   background-color: var(--bs-white);
+  z-index: 999;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--bs-white);
+  z-index: 999;
 }
 
 .horizontal-line.top {

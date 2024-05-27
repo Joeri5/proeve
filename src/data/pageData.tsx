@@ -136,7 +136,7 @@ export const extraPaths: SidePageDataProps[] = [
           <br />
           2. Become a GLUE participant
 
-          When you become a GLUE participant, it means you will join the GLUE Design Route in September. 
+          When you become a GLUE participant, it means you will join the GLUE Design Route in September.
           <br /><Link href="https://members.glue.amsterdam/">More information about the design route you find on the website. </Link>
           <br />As a GLUE participant you are automatically also a GLUE member. The fee for the membership is included in the participation fee.
           Depending on the size of your company, or your wishes, you can choose between 4 packages.
@@ -182,6 +182,50 @@ export const extraPaths: SidePageDataProps[] = [
           future of the Amsterdam design scene. At the heart of our organisation are the
           visionary minds and dedicated individuals who form the backbone of GLUE. Allow
           us to introduce you to the driving forces behind our success
+          <br />
+          <br />
+          Aldana Alegre - Content Manager <br />
+          <Link href="mailto:aldana@glue.amsterdam">aldana@glue.amsterdam</Link><br />
+          With a passion for storytelling and a keen eye for detail, Aldana brings design
+          and narratives together via our website and social media. Her background in
+          Interior Architectures and expertise in curating captivating content ensures
+          that GLUE's message reaches far and wide, resonating with design enthusiasts
+          and professionals alike.
+          <br />
+          <br />
+          Janine de Jong - Co-Founder and Head of PR and Sales <br />
+          <Link href="mailto:janine@glue.amsterdam">janine@glue.amsterdam</Link><br />
+          <Link href="tel:+31 (0)6 4622 1506">+31 (0)6 4622 1506</Link><br />
+          Janine's entrepreneurial spirit and artful negotiation skills have been pivotal
+          in shaping GLUE's trajectory. As a co-founder and the driving force behind
+          sales, she forges partnerships, fosters collaborations, and paves the way for a
+          thriving creative and professional ecosystem.
+
+          <br />
+          <br />
+          Guus van Maarschalkerweerd - Co-Founder, Lead in<br />
+          Partnerships and Community Builder <br />
+          <Link href="mailto:guus@glue.amsterdam">guus@glue.amsterdam</Link><br />
+          <Link href="tel: +31 (0)6 5494 0225"> +31 (0)6 5494 0225</Link><br />
+          Cultivating a vibrant artistic community is Guus's forte. As a co-founder and
+          community builder, he bridges connections between designers, architects and
+          patrons, fostering an environment where ideas flourish, relationships blossom,
+          and creativity knows no bounds. Guus is also the creative mind behind
+          franchising the GLUE format for other creative hotspots worldwide, with GLUE
+          Dallas as the first partnering city.
+
+          <br />
+          <br />
+          David Heldt - Co-Founder and Creative Director<br />
+          Partnerships and Community Builder <br />
+          <Link href="mailto:david@glue.amsterdam">david@glue.amsterdam</Link><br />
+          <Link href="tel:+31 (0)6 1551 0727">+31 (0)6 1551 0727</Link><br />
+          David's multifaceted role as a co-founder and creative director paints the
+          larger picture of GLUE's artistic journey. With a keen understanding of
+          cultural entrepreneurism and its dynamics, he spearheads innovative projects
+          that push boundaries and challenge conventions. David's creative direction
+          infuses GLUE with a distinctive identity that resonates with both creators and
+          enthusiasts.
         </p>
         <img src="https://glue.amsterdam/cms/assets/img/GLUE%20team.jpg" alt="" />
 

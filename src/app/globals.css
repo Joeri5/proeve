@@ -36,10 +36,7 @@ body {
 }
 
 /*navigation styling*/
-.routes {
-  color: var(--bs-white);
-  text-decoration: none;
-}
+
 
 .pageLayout {
   display: inline-grid;

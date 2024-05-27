@@ -11,12 +11,14 @@ import SearchComponent from "../components/searchFunction/searchFunction"
 
 /*import css files*/
 import "../app/globals.css";
+import "../styles/navbar.css";
 
 export const PageData: PageDataProps[] = [
   {
     path: "/",
-    title: "Home Page",
+    title: "",
     component: "HomePage",
+    navClass: "",
     content: (
       <div >
       
@@ -25,8 +27,9 @@ export const PageData: PageDataProps[] = [
   },
   {
     path: "/joinglue",
-    title: "Join Glue Page",
+    title: "Join Glue 2024",
     component: "JoinGluePage",
+    navClass: "joinglue__link",
     content: (
       <div className="pageLayout ">
         <h1>sign up / log in</h1>
@@ -41,8 +44,9 @@ export const PageData: PageDataProps[] = [
   },
   {
     path: "/about",
-    title: "About Page",
+    title: "About",
     component: "AboutPage",
+    navClass: "about__link",
     content: (
       <div className="pageLayout">
         <h1>About GLUE</h1>
@@ -55,8 +59,9 @@ export const PageData: PageDataProps[] = [
   },
   {
     path: "/visit",
-    title: "Visit Page",
+    title: "Visit",
     component: "VisitPage",
+    navClass: "visit__link",
     content: (
       <div className="pageLayout">
         <h1>visit</h1>
@@ -69,8 +74,9 @@ export const PageData: PageDataProps[] = [
   },
   {
     path: "/map",
-    title: "Map Page",
-    component: "MapPage"
+    title: "Map",
+    component: "MappPage",
+    navClass: "map__link",
   },
   
 ]

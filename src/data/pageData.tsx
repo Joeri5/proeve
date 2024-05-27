@@ -55,7 +55,7 @@ export const PageData: PageDataProps[] = [
         <br />
         <p>GLUE is a community for designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. This year the design route takes place from 19 – 22 September in 2024.Would you like to be part of the GLUE Community? A Membership is the way to go. During the year, all kind of events where you can meet the industry are organised. Monthly Community Cocktails and the opening party at Paradiso, to mention a few. You can become a member at any time. Want to participate in the GLUE design route of September in addition to becoming a member? Sign up as a participant and you are automatically a GLUE member too. Please subscribe before 1st of May 2024. It is possible to choose to be a GLUE member first, and decide later if you also want to also participate in the route. You can switch to a Participant Membership before 1st of May 2024. (You only pay the difference between a membership and the participation fee.)
           <br /><br /><Link href="https://glue.amsterdam/cms/assets/pdf/GLUE_2024_acbd_lr.pdf">Download Bronchure Here</Link>
-          <br /><br /><Link href="/member">more info about becoming a member and participant</Link>
+          <br /><br /><Link href="/becomemember">more info about becoming a member and participant</Link>
           <br /> <Link href="https://members.glue.amsterdam/sign-up/1">Signup directly</Link>
           <br /><br /><Link href="/login">login</Link>
         </p>

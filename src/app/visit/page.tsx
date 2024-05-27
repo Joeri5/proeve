@@ -1,9 +1,10 @@
+import ContentDividderWrapperComponent from "@/components/mainContentDividerWrapperComponent/mainContentDividerWrapperComponent"
 export default function Visit() {
     return (
-      <body>
+      <>
       <section>
-        
+      <ContentDividderWrapperComponent/>
       </section>
-      </body>
+      </>
     )
 }

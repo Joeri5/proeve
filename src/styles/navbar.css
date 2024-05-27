@@ -1,0 +1,45 @@
+@import "./rootstyles/color.css";
+@import "./rootstyles/borders.css";
+@import "./rootstyles/links.css";
+@import "./rootstyles/typograpghy.css";
+
+.routes {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.routes__title {
+    font-size: 77px;
+    margin:0;
+    padding:0;
+    white-space: nowrap;
+}
+
+.joinglue__link {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.about__link{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.visit__link{
+    position: absolute;
+    top:50%;
+    right:10%;
+    transform: translateY(-50%);
+}
+
+.map__link{
+    position: absolute;
+    bottom:20%;
+    right:50%;
+    transform: translateX(50%);
+}
+

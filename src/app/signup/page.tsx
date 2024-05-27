@@ -1,11 +1,9 @@
-
-import Link from "next/link"
+import ContentDividderWrapperComponent from "@/components/mainContentDividerWrapperComponent/mainContentDividerWrapperComponent";
 
 export default function signup() {
   return (
-    <body>
-     
-      
-    </body>
+    <>
+    <ContentDividderWrapperComponent/>
+    </>
   )
 }

@@ -36,3 +36,19 @@
     transform: translate(-50%, -50%) !important;
     height: 60% !important;
 }
+
+.homeButton {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.homeButton > a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.homeButton > a:hover {
+    text-decoration: underline;
+}

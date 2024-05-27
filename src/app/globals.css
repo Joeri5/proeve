@@ -87,6 +87,10 @@ body {
   font-size: 3rem;
 }
 
+.pageLayout > nav a:hover {
+  text-decoration: underline;
+}
+
 .pageLayout > p {
   padding: 15% 15% 0 15%;
 }

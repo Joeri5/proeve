@@ -20,7 +20,7 @@ const Carousel: React.FC<Props> = ({ data }) => {
     const prevSlide = () => {
         setSlide(slide === 0 ? data.length - 1 : slide - 1)
     }
-    console.log(data);
+    // console.log(data);
     return (
         <article className="pageLayout">
             {data.map((item, index) => (

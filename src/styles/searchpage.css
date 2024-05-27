@@ -51,6 +51,11 @@
     border-radius: 4px;
 
   }
+
+  .searchForm__button__icon {
+    filter: invert(100%);
+    
+  }
   
   .searchForm__results {
     margin-top: 20px;

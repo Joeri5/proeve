@@ -82,6 +82,10 @@
   filter:invert(100%);
   width:70px;
   height:70px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* HOMEPAGE CONTENT */

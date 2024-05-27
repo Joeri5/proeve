@@ -13,19 +13,19 @@ import SearchComponent from "../components/searchFunction/searchFunction"
 import "../app/globals.css";
 
 export const PageData: PageDataProps[] = [
-  {
-    path: "/",
-    title: "Home Page",
-    component: "HomePage",
-    content: (
-      <div >
+  // {
+  //   path: "/",
+  //   title: "Home Page",
+  //   component: "HomePage",
+  //   content: (
+  //     <div >
       
-      </div>
-    )
-  },
+  //     </div>
+  //   )
+  // },
   {
     path: "/joinglue",
-    title: "Join Glue Page",
+    title: "Join Glue",
     component: "JoinGluePage",
     content: (
       <div className="pageLayout ">
@@ -41,7 +41,7 @@ export const PageData: PageDataProps[] = [
   },
   {
     path: "/about",
-    title: "About Page",
+    title: "About",
     component: "AboutPage",
     content: (
       <div className="pageLayout">
@@ -55,7 +55,7 @@ export const PageData: PageDataProps[] = [
   },
   {
     path: "/visit",
-    title: "Visit Page",
+    title: "Visit",
     component: "VisitPage",
     content: (
       <div className="pageLayout">
@@ -69,7 +69,7 @@ export const PageData: PageDataProps[] = [
   },
   {
     path: "/map",
-    title: "Map Page",
+    title: "Map",
     component: "MapPage"
   },
   

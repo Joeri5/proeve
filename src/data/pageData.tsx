@@ -14,7 +14,7 @@ import Carousel from "@/components/carousel/Carousel";
 import "../app/globals.css";
 import "../styles/navbar.css";
 
-import "../styles/joinglue.css"
+
 
 /*  IMPORT IMAGES   */
 import StedelijkMuseumImage from "../../public/images/partners/stedelijke .png"
@@ -58,13 +58,13 @@ export const PageData: PageDataProps[] = [
     component: "JoinGluePage",
     navClass: "joinglue__link",
     content: (
-      <div className="pageLayout ">
+      <div className="pageLayout">
         <h1 className="grid-black">sign up / log in</h1>
         <div className="grid-black"></div>
         <p className="grid-black">GLUE is a community for designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. This year the design route takes place from 19 – 22 September in 2024.Would you like to be part of the GLUE Community? A Membership is the way to go. During the year, all kind of events where you can meet the industry are organised. Monthly Community Cocktails and the opening party at Paradiso, to mention a few. You can become a member at any time. Want to participate in the GLUE design route of September in addition to becoming a member? Sign up as a participant and you are automatically a GLUE member too. Please subscribe before 1st of May 2024. It is possible to choose to be a GLUE member first, and decide later if you also want to also participate in the route. You can switch to a Participant Membership before 1st of May 2024. (You only pay the difference between a membership and the participation fee.)
           <br /><br /><Link href="https://glue.amsterdam/cms/assets/pdf/GLUE_2024_acbd_lr.pdf">Download Bronchure Here</Link>
           <br /><br /><Link href="/becomemember">more info about becoming a member and participant</Link>
-          <br /> <Link href="https://members.glue.amsterdam/sign-up/1">Signup directly</Link>
+          <br /><br /><Link href="https://members.glue.amsterdam/sign-up/1">Signup directly</Link>
           <br /><br /><Link href="/login">login</Link>
         </p>
         <div className="grid-yellow"></div>
@@ -135,9 +135,9 @@ export const extraPaths: SidePageDataProps[] = [
     component: "becomemember",
     content: (
       <div className="pageLayout">
-        <h1 className="pageLayout__title">members</h1>
-        <div></div>
-        <p>
+        <h1 className="grid-black">members</h1>
+        <div className="grid-black"></div>
+        <p className="grid-black">
           Application deadline: 1 may 2023
           <br />
           <br />
@@ -155,6 +155,7 @@ export const extraPaths: SidePageDataProps[] = [
           <br />As a GLUE participant you are automatically also a GLUE member. The fee for the membership is included in the participation fee.
           Depending on the size of your company, or your wishes, you can choose between 4 packages.
         </p>
+        <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -291,7 +292,7 @@ export const extraPaths: SidePageDataProps[] = [
 
 
           Get inspired and check out all interviews on Youtube or SALTO TV.</p>
-          <div className="grid-yellow "></div>
+        <div className="grid-yellow "></div>
       </div>
     )
   },
@@ -306,10 +307,10 @@ export const extraPaths: SidePageDataProps[] = [
           <SidebarNavAboutComponent />
         </nav>
         <nav>
-        <p>
-          GLUE amsterdam connected by design is made possible by the support of our Founding and Cultural Partners. Their businesses are strongly tied with the culture and economy of Amsterdam. Who are they?
-        </p><br />
-        <SidebarNavPartnersComponent />
+          <p>
+            GLUE amsterdam connected by design is made possible by the support of our Founding and Cultural Partners. Their businesses are strongly tied with the culture and economy of Amsterdam. Who are they?
+          </p><br />
+          <SidebarNavPartnersComponent />
         </nav>
         <div className="grid-yellow"></div>
 
@@ -338,7 +339,7 @@ export const extraPaths: SidePageDataProps[] = [
           karin@dijksmancommunicatie.nl <br /><br />
 
           06 3100 6880</p>
-          <div className="grid-yellow"></div>
+        <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -355,7 +356,7 @@ export const extraPaths: SidePageDataProps[] = [
         <p>GLUE embraces the creative city even more warmly than before. Designers who contribute to broadening the field of design, making it more accessible, playful, and inspiring can be selected to become a curated STICKY member. Curated STICKY members receive the same "package" as normal STICKY members, but they participate free of charge. This group of members is selected by a panel of curators; it is nog possible to apply for a curated membership. The selection for 2023 was done by Rubiah Balsem, founder of Studio Balsem, and David Heldt, co-founder of GLUE. A new panel of curators will make a selection for GLUE 2024.
 
           ‘By opening up the conversation about what design is, we also explore the boundaries between art, fashion, and design. Sometimes creatives don’t feel comfortable in one box and like to experiment with different concepts. And at the edge of the field is where it becomes interesting. It is a fragment of time that says something about the direction in which our society is moving,’ says Rubiah Balsem.</p>
-          <div className="grid-yellow"></div>
+        <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -398,7 +399,7 @@ export const extraPaths: SidePageDataProps[] = [
           GLUE aspires diversity and inclusivity, has an eye for sustainability and has a focus on wellbeing. GLUE gives profile to the Amsterdam design community, and wants to connect the sector better and makes it more discoverable.
           All members have a spot on the GLUE stage; we encourage them to organise something sensational and relevant during the four days GLUE amsterdam connected by design. GLUE organises community drinks in the months towards the design route at various different venues of the GLUE members.
           GLUE brings the sector together to meet and exchange ideas, and connect creativity, inclusivity and well-being to accomplish a future-proof and better-connected design sector for Amsterdam.</p>
-          <div className="grid-yellow"></div>
+        <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -458,7 +459,7 @@ export const extraPaths: SidePageDataProps[] = [
           Chamber or Commerce nr.: KVK85781398
 
           RSIN nr. 863739763</p>
-          <div className="grid-yellow"></div>
+        <div className="grid-yellow"></div>
       </div>
     )
   },

@@ -24,8 +24,6 @@ body {
 
 }
 
-  
-}
 /*homepage styling*/
 .homepage__layout{
   height:100vh;
@@ -47,9 +45,9 @@ body {
   grid-template: 50% / 50% 50%;
 }
 
-.pageLayout__title {
+.pageLayout > h1 {
   padding: 15% 15% 0 15%;
-  font-size: 40px;
+  font-size: 75px;
   font-weight: 500;
 }
 

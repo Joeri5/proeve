@@ -8,10 +8,12 @@ import Image from "next/image";
 import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
 import SidebarNavPartnersComponent from "../components/SidebarNavPartnersComponent/SidebarNavPartnersComponent"
 import SearchComponent from "../components/searchFunction/searchFunction"
+import Carousel from "@/components/carousel/Carousel";
 
 /*import css files*/
 import "../app/globals.css";
 import "../styles/navbar.css";
+
 import "../styles/joinglue.css"
 
 /*  IMPORT IMAGES   */
@@ -28,6 +30,14 @@ import salto from "../../public/images/partners/salto.png"
 import basdegroot from "../../public/images/partners/bas de groot.png"
 import mediacollege from "../../public/images/partners/mediacollege.png"
 import PakhuisDeZwijger from "../../public/images/partners/pakhuis de zwijger.png"
+
+
+// import carousel data
+import slides from '../components/carousel/CarouselData.json'
+import slides2 from '../components/carousel/CarouselData2.json'
+import slides3 from '../components/carousel/CarouselData3.json'
+
+
 
 
 export const PageData: PageDataProps[] = [
@@ -48,18 +58,16 @@ export const PageData: PageDataProps[] = [
     component: "JoinGluePage",
     navClass: "joinglue__link",
     content: (
-      <div className="pageLayout">
-        <div className="pageLayout__title ">
-          <h1>sign up / log in</h1>
-        </div>
-        <br />
-        <p>GLUE is a community for designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. This year the design route takes place from 19 – 22 September in 2024.Would you like to be part of the GLUE Community? A Membership is the way to go. During the year, all kind of events where you can meet the industry are organised. Monthly Community Cocktails and the opening party at Paradiso, to mention a few. You can become a member at any time. Want to participate in the GLUE design route of September in addition to becoming a member? Sign up as a participant and you are automatically a GLUE member too. Please subscribe before 1st of May 2024. It is possible to choose to be a GLUE member first, and decide later if you also want to also participate in the route. You can switch to a Participant Membership before 1st of May 2024. (You only pay the difference between a membership and the participation fee.)
+      <div className="pageLayout ">
+        <h1 className="grid-black">sign up / log in</h1>
+        <div className="grid-black"></div>
+        <p className="grid-black">GLUE is a community for designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. This year the design route takes place from 19 – 22 September in 2024.Would you like to be part of the GLUE Community? A Membership is the way to go. During the year, all kind of events where you can meet the industry are organised. Monthly Community Cocktails and the opening party at Paradiso, to mention a few. You can become a member at any time. Want to participate in the GLUE design route of September in addition to becoming a member? Sign up as a participant and you are automatically a GLUE member too. Please subscribe before 1st of May 2024. It is possible to choose to be a GLUE member first, and decide later if you also want to also participate in the route. You can switch to a Participant Membership before 1st of May 2024. (You only pay the difference between a membership and the participation fee.)
           <br /><br /><Link href="https://glue.amsterdam/cms/assets/pdf/GLUE_2024_acbd_lr.pdf">Download Bronchure Here</Link>
           <br /><br /><Link href="/becomemember">more info about becoming a member and participant</Link>
           <br /> <Link href="https://members.glue.amsterdam/sign-up/1">Signup directly</Link>
           <br /><br /><Link href="/login">login</Link>
         </p>
-        <div className="pageLayout__"></div>
+        <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -71,9 +79,11 @@ export const PageData: PageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>About GLUE</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>A four days design-route for Amsterdam designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. GLUE amsterdam connected by design connects all locations and provides a substantive and attractive program for colleagues and the public. Independence is essential, GLUE does not commit to one party, but all of them. Starting designers, knowledge institutes, renowned designers, and large agencies, diverse and ground floor suits Amsterdam, even though we sometimes have to climb a steep staircase. GLUE gives a profile to Amsterdam design and wants to connect the sector better and make it more discoverable. All participants have a dot on the map; we encourage them to organize something sensational and relevant during GLUE amsterdam connected by design.</p>
-        <img src="https://glue.amsterdam/cms/assets/img/GLUE%20team.jpg" alt="" />
+        <img src="https://glue.amsterdam/cms/assets/img/GLUE%20team.jpg" alt="" className="grid-yellow" />
 
       </div>
     )
@@ -85,15 +95,19 @@ export const PageData: PageDataProps[] = [
     navClass: "visit__link",
     content: (
       <div className="pageLayout">
-        <h1>visit</h1>
-        <div></div>
-        <p>GLUE is a four-day design-route from and for Amsterdam designers, the general public, architects, brands, showrooms, galleries, academies, and other colleagues.
+        <h1 className="grid-purple">visit</h1>
+        <div className="grid-yellow "></div>
+        <p className="grid-purple">GLUE is a four-day design-route from and for Amsterdam designers, the general public, architects, brands, showrooms, galleries, academies, and other colleagues.
           <br /><br /><Link href="/member">members</Link>
+          <br /><br /><Link href="https://members.glue.amsterdam/program">see full program</Link>
+          <br /><br /><Link href="https://members.glue.amsterdam/">see all locations</Link>
         </p>
+        <div className="grid-yellowdark"></div>
       </div>
     )
   },
   {
+
     path: "https://members.glue.amsterdam/",
     title: "Map",
     component: "MappPage",
@@ -155,9 +169,10 @@ export const extraPaths: SidePageDataProps[] = [
     component: "Memberspage",
     content: (
       <div className="pageLayout">
-        <h1>members</h1>
-        <div></div>
-        <p>Loading...</p>
+        <h1 className="grid-purple">members</h1>
+        <div className="grid-yellow "></div>
+        <p className="grid-purple">Loading...</p>
+        <div className="grid-yellowdark"></div>
       </div>
     )
   },
@@ -176,7 +191,10 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>Meet the Team</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
+
         <p>Welcome to GLUE amsterdam connected by design – where
           creativity, collaboration and a large variety of members converge to shape the
           future of the Amsterdam design scene. At the heart of our organisation are the
@@ -227,7 +245,7 @@ export const extraPaths: SidePageDataProps[] = [
           infuses GLUE with a distinctive identity that resonates with both creators and
           enthusiasts.
         </p>
-        <img src="https://glue.amsterdam/cms/assets/img/GLUE%20team.jpg" alt="" />
+        <img className="grid-yellow" src="https://glue.amsterdam/cms/assets/img/GLUE%20team.jpg" alt="" />
 
       </div>
     )
@@ -239,7 +257,9 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>GLUE participants 2023</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>Click on the link and see the map of Amsterdam with all participating brands, designers, studio's and academies of GLUE 2023
 
           <br /><br /><Link href="https://2023.glue.amsterdam/">2023 glue amsterdam</Link>
@@ -255,7 +275,9 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>GLUE TV</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>GLUE TV
 
 
@@ -269,6 +291,7 @@ export const extraPaths: SidePageDataProps[] = [
 
 
           Get inspired and check out all interviews on Youtube or SALTO TV.</p>
+          <div className="grid-yellow "></div>
       </div>
     )
   },
@@ -279,11 +302,17 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>partners 2023</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
+        <nav>
         <p>
           GLUE amsterdam connected by design is made possible by the support of our Founding and Cultural Partners. Their businesses are strongly tied with the culture and economy of Amsterdam. Who are they?
         </p><br />
         <SidebarNavPartnersComponent />
+        </nav>
+        <div className="grid-yellow"></div>
+
       </div>
     )
   },
@@ -294,7 +323,9 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>press</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>Please contact Karin Dijksman for the most recent press release,
           high-res images and other press enquires. <br /><br />
 
@@ -307,6 +338,7 @@ export const extraPaths: SidePageDataProps[] = [
           karin@dijksmancommunicatie.nl <br /><br />
 
           06 3100 6880</p>
+          <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -317,10 +349,13 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>curated STICKY members</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>GLUE embraces the creative city even more warmly than before. Designers who contribute to broadening the field of design, making it more accessible, playful, and inspiring can be selected to become a curated STICKY member. Curated STICKY members receive the same "package" as normal STICKY members, but they participate free of charge. This group of members is selected by a panel of curators; it is nog possible to apply for a curated membership. The selection for 2023 was done by Rubiah Balsem, founder of Studio Balsem, and David Heldt, co-founder of GLUE. A new panel of curators will make a selection for GLUE 2024.
 
           ‘By opening up the conversation about what design is, we also explore the boundaries between art, fashion, and design. Sometimes creatives don’t feel comfortable in one box and like to experiment with different concepts. And at the edge of the field is where it becomes interesting. It is a fragment of time that says something about the direction in which our society is moving,’ says Rubiah Balsem.</p>
+          <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -331,8 +366,16 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>creative citizens of honour</h1>
-        <SidebarNavAboutComponent />
-        <p>Three creative industry leaders have been chosen each year for their outstanding contribution to the city's social cohesion. Discover who they are!</p>
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
+        <p>
+          Three creative industry leaders have been chosen each year for their outstanding contribution to the city's social cohesion. Discover who they are!
+          <br /><br /><Link href="/2023">2023</Link>
+          <br /><br /><Link href="/2022">2022</Link>
+          <br /><br /><Link href="/2021">2021</Link>
+        </p>
+        <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -343,7 +386,9 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>mission statement</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>The power of local, connecting & inspiring
           GLUEs primary mission is to connect the local design community, consisting of designers, creatives, architects, brands, showrooms, galleries, academies, and other colleagues by providing spaces to meet and moments to share and connect. Secondary mission is to connect the general public with the design community, which happens during the three days of the design-route.
 
@@ -353,6 +398,7 @@ export const extraPaths: SidePageDataProps[] = [
           GLUE aspires diversity and inclusivity, has an eye for sustainability and has a focus on wellbeing. GLUE gives profile to the Amsterdam design community, and wants to connect the sector better and makes it more discoverable.
           All members have a spot on the GLUE stage; we encourage them to organise something sensational and relevant during the four days GLUE amsterdam connected by design. GLUE organises community drinks in the months towards the design route at various different venues of the GLUE members.
           GLUE brings the sector together to meet and exchange ideas, and connect creativity, inclusivity and well-being to accomplish a future-proof and better-connected design sector for Amsterdam.</p>
+          <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -363,7 +409,9 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>GLUE Dallas</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>GLUE founders were inspired by Amsterdam’s vibrant activity to bring the creative sector together, now in its fourth edition the desire to expand the concept has reached the United States, with its Dallas edition set for April 3-5, 2024.
 
 
@@ -390,7 +438,9 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
         <h1>GLUE Foundation</h1>
-        <SidebarNavAboutComponent />
+        <nav className="grid-purple">
+          <SidebarNavAboutComponent />
+        </nav>
         <p>GLUE Foundation is set up to realise a cultural program for GLUE. The Foundation is responsible, among other programs, for the yearly nomination and ceremony celebrating the Creative Citizens of Honor in Paradiso, the curated STICKY members, and GLUE TV.
 
 
@@ -408,6 +458,7 @@ export const extraPaths: SidePageDataProps[] = [
           Chamber or Commerce nr.: KVK85781398
 
           RSIN nr. 863739763</p>
+          <div className="grid-yellow"></div>
       </div>
     )
   },
@@ -511,6 +562,36 @@ export const extraPaths: SidePageDataProps[] = [
     content: (
       <div className="pageLayout">
 
+      </div>
+    )
+  },
+  {
+    path: "/2023",
+    title: "2023",
+    component: "2023",
+    content: (
+      <div>
+        <Carousel data={slides} />
+      </div>
+    )
+  },
+  {
+    path: "/2022",
+    title: "2022",
+    component: "2022",
+    content: (
+      <div>
+        <Carousel data={slides2} />
+      </div>
+    )
+  },
+  {
+    path: "/2021",
+    title: "2021",
+    component: "2021",
+    content: (
+      <div>
+        <Carousel data={slides3} />
       </div>
     )
   },

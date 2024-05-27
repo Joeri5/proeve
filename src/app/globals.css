@@ -24,6 +24,22 @@ body {
 
 }
 
+  
+}
+/*homepage styling*/
+.homepage__layout{
+  height:100vh;
+
+}
+
+.homepage__header{
+  height:10%;
+  
+}
+
+/*navigation styling*/
+
+
 .pageLayout {
   display: inline-grid;
   width: 100%;
@@ -37,13 +53,24 @@ body {
   font-weight: 500;
 }
 
-.pageLayout > nav {
+.pageLayout > nav:first-of-type{
   padding: 15% 15% 5% 15%;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   overflow: scroll;
+
+}
+
+.pageLayout > nav{
+  padding: 15% 15% 5% 15%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: visible;
+  
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -62,6 +89,10 @@ body {
   font-size: 3rem;
 }
 
+.pageLayout > nav a:hover {
+  text-decoration: underline;
+}
+
 .pageLayout > p {
   padding: 15% 15% 0 15%;
 }
@@ -70,17 +101,18 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .pageLayout a {
   color: var(--bs-white);
-  /* text-decoration: none; */
 }
 
 a {
   color: var(--bs-white);
   text-decoration: none;
 }
+
 
 .pageLayout__pageImage {
   display: flex;
@@ -90,3 +122,22 @@ a {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+/* colours for the grid items */
+
+.grid-blue {
+  background-color: var(--bs-darkblue);
+}
+.grid-black {
+  background-color: black;
+}
+.grid-purple {
+  background-color: var(--bs-darkerblue);
+}
+.grid-yellow {
+  background-color: var(--bs-yellow);
+}
+.grid-yellowdark {
+  background-color: var(--bs-darkyellow);
+}
+

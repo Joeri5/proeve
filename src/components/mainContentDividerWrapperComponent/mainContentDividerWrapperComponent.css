@@ -1,3 +1,21 @@
-.contentWrapper {
-    display: inline-grid;
+.letter{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+}
+
+.letter_G {
+    translate: none; rotate: none; scale: none; transform: translate(0%, -50%); top: 420px; left: 0px;
+}
+
+.letter_L {
+    translate: none; rotate: none; scale: none; transform: translate(59.0703px, 0px); top: 0px; right: 50%;
+}
+
+.letter_U {
+    translate: none; rotate: none; scale: none; transform: translate(-50%, 0%) translate(-0.1797px, 0px); bottom: 0px; left: 50%;
+}
+
+.letter_E {
+    translate: none; rotate: none; scale: none; transform: translate(0px, 80px); bottom: 420px; right: 0px;
 }

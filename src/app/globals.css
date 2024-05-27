@@ -31,8 +31,44 @@ body {
   /* grid-auto-rows: 50%;
   grid-template-columns: 50%; */
   grid-template: 50% / 50% 50%;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
+}
+
+.pageLayout > h1 {
+  padding: 15% 15% 0 15%;
+  font-size: 75px;
+  font-weight: 500;
+}
+
+.pageLayout > nav {
+  padding: 15% 15% 5% 15%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: scroll;
+  
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.pageLayout > nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.pageLayout > nav {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.pageLayout > nav a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.pageLayout > p {
+  padding: 15% 15% 0 15%;
 }
 
 .pageLayout > img {

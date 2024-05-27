@@ -3,6 +3,7 @@ export interface PageDataProps {
     path: string;
     title: string;
     component: string;
+    navClass: string;
     content?: React.ReactNode;
 }
 

@@ -18,3 +18,5 @@ export interface InfoPageDataProps {
     subtext: string;
     path?: string;
 }
+
+

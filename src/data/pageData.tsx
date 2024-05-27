@@ -1,8 +1,16 @@
+
+/*import data types*/
 import { PageDataProps, SidePageDataProps, InfoPageDataProps } from "./types/pageData.t";
 import Link from "next/link";
+import Image from "next/image";
 
 /*import components*/
 import SidebarNavAboutComponent from "../components/sidebarNavAboutComponents/sidebarNavAboutComponent"
+import SidebarNavPartnersComponent from "../components/SidebarNavPartnersComponent/SidebarNavPartnersComponent"
+import SearchComponent from "../components/searchFunction/searchFunction"
+
+/*import css files*/
+import "../app/globals.css";
 
 export const PageData: PageDataProps[] = [
   {
@@ -10,8 +18,8 @@ export const PageData: PageDataProps[] = [
     title: "Home Page",
     component: "HomePage",
     content: (
-      <div>
-        testje
+      <div >
+      
       </div>
     )
   },
@@ -20,7 +28,7 @@ export const PageData: PageDataProps[] = [
     title: "Join Glue Page",
     component: "JoinGluePage",
     content: (
-      <div className="pageLayout">
+      <div className="pageLayout ">
         <h1>sign up / log in</h1>
         <div></div>
         <p>GLUE is a community for designers, the general public, architects, brands, labels, showrooms, galleries, academies and other colleagues. This year the design route takes place from 19 – 22 September in 2024.Would you like to be part of the GLUE Community? A Membership is the way to go. During the year, all kind of events where you can meet the industry are organised. Monthly Community Cocktails and the opening party at Paradiso, to mention a few. You can become a member at any time. Want to participate in the GLUE design route of September in addition to becoming a member? Sign up as a participant and you are automatically a GLUE member too. Please subscribe before 1st of May 2024. It is possible to choose to be a GLUE member first, and decide later if you also want to also participate in the route. You can switch to a Participant Membership before 1st of May 2024. (You only pay the difference between a membership and the participation fee.)
@@ -54,7 +62,7 @@ export const PageData: PageDataProps[] = [
         <h1>visit</h1>
         <div></div>
         <p>GLUE is a four-day design-route from and for Amsterdam designers, the general public, architects, brands, showrooms, galleries, academies, and other colleagues.
-        <br /><br /><Link href="/member">members</Link>
+          <br /><br /><Link href="/member">members</Link>
         </p>
       </div>
     )
@@ -64,6 +72,10 @@ export const PageData: PageDataProps[] = [
     title: "Map Page",
     component: "MapPage"
   },
+  
+]
+
+export const extraPaths: SidePageDataProps[] = [
   {
     path: "/login",
     title: "login page",
@@ -80,10 +92,7 @@ export const PageData: PageDataProps[] = [
     path: "/signup",
     title: "sign up page",
     component: "sign up"
-  }
-]
-
-export const extraPaths: SidePageDataProps[] = [
+  },
   {
     path: "/member",
     title: "Members page",
@@ -165,7 +174,8 @@ export const extraPaths: SidePageDataProps[] = [
         <SidebarNavAboutComponent />
         <p>
           GLUE amsterdam connected by design is made possible by the support of our Founding and Cultural Partners. Their businesses are strongly tied with the culture and economy of Amsterdam. Who are they?
-        </p>
+        </p><br/>
+          <SidebarNavPartnersComponent />
       </div>
     )
   },
@@ -227,7 +237,7 @@ export const extraPaths: SidePageDataProps[] = [
         <h1>mission statement</h1>
         <SidebarNavAboutComponent />
         <p>The power of local, connecting & inspiring
-          GLUE’s primary mission is to connect the local design community, consisting of designers, creatives, architects, brands, showrooms, galleries, academies, and other colleagues by providing spaces to meet and moments to share and connect. Secondary mission is to connect the general public with the design community, which happens during the three days of the design-route.
+          GLUEs primary mission is to connect the local design community, consisting of designers, creatives, architects, brands, showrooms, galleries, academies, and other colleagues by providing spaces to meet and moments to share and connect. Secondary mission is to connect the general public with the design community, which happens during the three days of the design-route.
 
           GLUE connects the members the whole year round, and opens the doors to the public each year in mid-September for a four days design route through Amsterdam. The three-day design route connects all GLUE locations and provides a substantive and attractive program for colleagues and the public.
           GLUE includes the whole scene; starting designers as well as renowned designers, small and big showrooms, hidden gems agencies and educational institutes. Smaller brands and individual creatives get exhibition space at a larger enterprise or hotel, these so called GLUE HUBS create new business relations for the members and make the program more challenging and diverse.
@@ -293,6 +303,77 @@ export const extraPaths: SidePageDataProps[] = [
       </div>
     )
   },
+  {
+    path: "/culturalpartners",
+    title: "Cultural Partners",
+    component: "culturalpartnerspage",
+    content: (
+      <div className="pageLayout">
+
+      </div>
+    )
+  },
+  {
+    path: "/foundingpartners",
+    title: "Founding partners",
+    component: "Foundingpartnerspage",
+    content: (
+      <div className="pageLayout">
+
+      </div>
+    )
+  },
+  {
+    path: "/communitypartners",
+    title: "Community Partners",
+    component: "communitypartnerspage",
+    content: (
+      <div className="pageLayout">
+
+      </div>
+    )
+  },
+  {
+    path: "/mobilitypartners",
+    title: "mobility Partners",
+    component: "mobilitypartnerspage",
+    content: (
+      <div className="pageLayout">
+
+      </div>
+    )
+  },
+  {
+    path: "/fundingpartners",
+    title: "funding Partners",
+    component: "fundingpartnerspage",
+    content: (
+      <div className="pageLayout">
+
+      </div>
+    )
+  },
+  {
+    path: "/broadcastingpartners",
+    title: "broadcasting Partners",
+    component: "broadcastingpartnerspage",
+    content: (
+      <div className="pageLayout">
+
+      </div>
+    )
+  },
+  {
+    path: "/search",
+    title: "search page",
+    component: "search",
+    content: (
+      <div className="pageLayout">
+        
+      </div>
+    )
+  },
+
 ]
 
 export const pageInfo: InfoPageDataProps[] = [

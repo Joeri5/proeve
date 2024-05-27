@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+@import "../styles/rootstyles/color.css";
+@import "../styles/rootstyles/borders.css";
+@import "../styles/rootstyles/links.css";
+@import "../styles/rootstyles/typograpghy.css";
 
 *,
 *::before,
@@ -14,13 +18,26 @@ html {
 
 body {
   font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  background-color: #10069f;
+  font-family: var( --bs-font-sans-serif);
+  color: var(--bs-white);
+  background-color: var(--bs-blue);
+  
+}
+/*homepage styling*/
+.homepage__layout{
+  height:100vh;
+  margin:2%;
+
 }
 
+.homepage__header{
+  height:10%;
+  
+}
+
+/*navigation styling*/
 .routes {
-  color: white;
+  color: var(--bs-white);
   text-decoration: none;
 }
 
@@ -78,6 +95,11 @@ body {
 }
 
 .pageLayout a {
-  color: white;
+  color: var(--bs-white);
   /* text-decoration: none; */
+}
+
+Link{
+  color: var(--bs-white);
+  text-decoration: none;
 }

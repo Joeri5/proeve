@@ -2,9 +2,10 @@ import ContentDividderWrapperComponent from "@/components/mainContentDividerWrap
 export default function Map() {
     return (
       <>
-      <section>
+      <meta http-equiv="refresh" content="0; URL=https://members.glue.amsterdam/" />
+      {/* <section>
       <ContentDividderWrapperComponent/>
-      </section>
+      </section> */}
       </>
     )
 }

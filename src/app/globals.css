@@ -42,11 +42,7 @@ body {
   display: inline-grid;
   width: 100%;
   height: 100vh;
-  /* grid-auto-rows: 50%;
-  grid-template-columns: 50%; */
   grid-template: 50% / 50% 50%;
-  /* padding-left: 5%;
-  padding-right: 5%; */
 }
 
 .pageLayout > h1 {
@@ -55,13 +51,23 @@ body {
   font-weight: 500;
 }
 
-.pageLayout > nav {
+.pageLayout > nav:first-of-type{
   padding: 15% 15% 5% 15%;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   overflow: scroll;
+}
+
+.pageLayout > nav{
+  padding: 15% 15% 5% 15%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: visible;
+  
   
 }
 
@@ -94,10 +100,27 @@ body {
 
 .pageLayout a {
   color: var(--bs-white);
-  /* text-decoration: none; */
 }
 
 Link{
   color: var(--bs-white);
   text-decoration: none;
+}
+
+/* colours for the grid items */
+
+.grid-blue {
+  background-color: var(--bs-darkblue);
+}
+.grid-black {
+  background-color: black;
+}
+.grid-purple {
+  background-color: var(--bs-darkerblue);
+}
+.grid-yellow {
+  background-color: var(--bs-yellow);
+}
+.grid-yellowdark {
+  background-color: var(--bs-darkyellow);
 }

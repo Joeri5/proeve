@@ -26,12 +26,12 @@ const Carousel: React.FC<Props> = ({ data }) => {
             {data.map((item, index) => (
                 <h1 key={index} className={slide === index ? "title" : "title title-inactive"}>{item.title}</h1>
             ))}
-            <div></div>
+            <div className="grid-purple"></div>
             {data.map((item, index) => (
                 <p key={index} className={slide === index ? "text" : "text text-inactive"}>{item.text}</p>
             ))}
 
-            <div className="carousel">
+            <div className="carousel grid-yellow">
                 <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
                 {data.map((item, index) => (
                     <img src={item.src} alt={item.alt} key={index} className={slide === index ? "slide" : "slide slide-hidden"} />

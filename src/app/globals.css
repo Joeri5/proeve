@@ -20,7 +20,7 @@ body {
   font-size: 2rem;
   font-family: var( --bs-font-sans-serif);
   color: var(--bs-white);
-  background-color: var(--bs-blue);
+  background-color: var(--bs-darkblue);
   
 }
 /*homepage styling*/

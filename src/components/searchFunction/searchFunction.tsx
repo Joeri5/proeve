@@ -8,7 +8,7 @@ import { PageData, extraPaths } from "@/data/pageData";
 
 import "../../styles/searchpage.css"
 
-import SearchIcon from "../../../public/images/icons/search.png"
+import SearchIcon from "../../../public/images/icons/search.svg"
 
 type SearchResult = {
   path: string;

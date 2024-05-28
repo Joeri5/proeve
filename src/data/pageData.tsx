@@ -33,9 +33,9 @@ import PakhuisDeZwijger from "../../public/images/partners/pakhuis de zwijger.pn
 
 
 // import carousel data
-import slides from '../components/carousel/CarouselData.json'
-import slides2 from '../components/carousel/CarouselData2.json'
-import slides3 from '../components/carousel/CarouselData3.json'
+import {slides} from '../components/carousel/carouselData'
+import {slides2} from '../components/carousel/carouselData2'
+import {slides3} from '../components/carousel/carouselData3'
 
 
 
@@ -208,15 +208,15 @@ export const extraPaths: SidePageDataProps[] = [
           With a passion for storytelling and a keen eye for detail, Aldana brings design
           and narratives together via our website and social media. Her background in
           Interior Architectures and expertise in curating captivating content ensures
-          that GLUE's message reaches far and wide, resonating with design enthusiasts
+          that GLUEs message reaches far and wide, resonating with design enthusiasts
           and professionals alike.
           <br />
           <br />
           Janine de Jong - Co-Founder and Head of PR and Sales <br />
           <Link href="mailto:janine@glue.amsterdam">janine@glue.amsterdam</Link><br />
           <Link href="tel:+31 (0)6 4622 1506">+31 (0)6 4622 1506</Link><br />
-          Janine's entrepreneurial spirit and artful negotiation skills have been pivotal
-          in shaping GLUE's trajectory. As a co-founder and the driving force behind
+          Janine&apos;s entrepreneurial spirit and artful negotiation skills have been pivotal
+          in shaping GLUE&apos;s trajectory. As a co-founder and the driving force behind
           sales, she forges partnerships, fosters collaborations, and paves the way for a
           thriving creative and professional ecosystem.
 
@@ -226,7 +226,7 @@ export const extraPaths: SidePageDataProps[] = [
           Partnerships and Community Builder <br />
           <Link href="mailto:guus@glue.amsterdam">guus@glue.amsterdam</Link><br />
           <Link href="tel: +31 (0)6 5494 0225"> +31 (0)6 5494 0225</Link><br />
-          Cultivating a vibrant artistic community is Guus's forte. As a co-founder and
+          Cultivating a vibrant artistic community is Guus&apos;s forte. As a co-founder and
           community builder, he bridges connections between designers, architects and
           patrons, fostering an environment where ideas flourish, relationships blossom,
           and creativity knows no bounds. Guus is also the creative mind behind
@@ -239,10 +239,10 @@ export const extraPaths: SidePageDataProps[] = [
           Partnerships and Community Builder <br />
           <Link href="mailto:david@glue.amsterdam">david@glue.amsterdam</Link><br />
           <Link href="tel:+31 (0)6 1551 0727">+31 (0)6 1551 0727</Link><br />
-          David's multifaceted role as a co-founder and creative director paints the
-          larger picture of GLUE's artistic journey. With a keen understanding of
+          David&apos;s multifaceted role as a co-founder and creative director paints the
+          larger picture of GLUE&apos;s artistic journey. With a keen understanding of
           cultural entrepreneurism and its dynamics, he spearheads innovative projects
-          that push boundaries and challenge conventions. David's creative direction
+          that push boundaries and challenge conventions. David&apos;s creative direction
           infuses GLUE with a distinctive identity that resonates with both creators and
           enthusiasts.
         </p>
@@ -261,7 +261,7 @@ export const extraPaths: SidePageDataProps[] = [
         <nav className="grid-purple">
           <SidebarNavAboutComponent />
         </nav>
-        <p>Click on the link and see the map of Amsterdam with all participating brands, designers, studio's and academies of GLUE 2023
+        <p>Click on the link and see the map of Amsterdam with all participating brands, designers, studio&apos;s and academies of GLUE 2023
 
           <br /><br /><Link href="https://2023.glue.amsterdam/">2023 glue amsterdam</Link>
         </p>
@@ -353,9 +353,9 @@ export const extraPaths: SidePageDataProps[] = [
         <nav className="grid-purple">
           <SidebarNavAboutComponent />
         </nav>
-        <p>GLUE embraces the creative city even more warmly than before. Designers who contribute to broadening the field of design, making it more accessible, playful, and inspiring can be selected to become a curated STICKY member. Curated STICKY members receive the same "package" as normal STICKY members, but they participate free of charge. This group of members is selected by a panel of curators; it is nog possible to apply for a curated membership. The selection for 2023 was done by Rubiah Balsem, founder of Studio Balsem, and David Heldt, co-founder of GLUE. A new panel of curators will make a selection for GLUE 2024.
+        <p>GLUE embraces the creative city even more warmly than before. Designers who contribute to broadening the field of design, making it more accessible, playful, and inspiring can be selected to become a curated STICKY member. Curated STICKY members receive the same &qout;package&qout; as normal STICKY members, but they participate free of charge. This group of members is selected by a panel of curators; it is nog possible to apply for a curated membership. The selection for 2023 was done by Rubiah Balsem, founder of Studio Balsem, and David Heldt, co-founder of GLUE. A new panel of curators will make a selection for GLUE 2024.
 
-          ‘By opening up the conversation about what design is, we also explore the boundaries between art, fashion, and design. Sometimes creatives don’t feel comfortable in one box and like to experiment with different concepts. And at the edge of the field is where it becomes interesting. It is a fragment of time that says something about the direction in which our society is moving,’ says Rubiah Balsem.</p>
+          ‘By opening up the conversation about what design is, we also explore the boundaries between art, fashion, and design. Sometimes creatives don&apos;t feel comfortable in one box and like to experiment with different concepts. And at the edge of the field is where it becomes interesting. It is a fragment of time that says something about the direction in which our society is moving,&apos; says Rubiah Balsem.</p>
         <div className="grid-yellow"></div>
       </div>
     )
@@ -371,7 +371,7 @@ export const extraPaths: SidePageDataProps[] = [
           <SidebarNavAboutComponent />
         </nav>
         <p>
-          Three creative industry leaders have been chosen each year for their outstanding contribution to the city's social cohesion. Discover who they are!
+          Three creative industry leaders have been chosen each year for their outstanding contribution to the city&apos;s social cohesion. Discover who they are!
           <br /><br /><Link href="/2023">2023</Link>
           <br /><br /><Link href="/2022">2022</Link>
           <br /><br /><Link href="/2021">2021</Link>

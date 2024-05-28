@@ -1,4 +1,4 @@
-[
+export const slides = [
     {
         "src": "https://glue.amsterdam/cms/assets/img/Janine%20scooterzaak.jpg",
         "alt": "image 1 for carousel",

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+// import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 import './Carousel.css'
 
@@ -32,11 +32,17 @@ const Carousel: React.FC<Props> = ({ data }) => {
             ))}
 
             <div className="carousel grid-yellow">
-                <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
+                {/* <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} /> */}
+                <button className="arrow arrow-left" onClick={prevSlide}>
+                    &lt;
+                </button>
                 {data.map((item, index) => (
                     <img src={item.src} alt={item.alt} key={index} className={slide === index ? "slide" : "slide slide-hidden"} />
                 ))}
-                <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} />
+                <button className="arrow arrow-right" onClick={nextSlide}>
+                    &gt;
+                </button>
+                {/* <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} /> */}
                 <span className="indicators">
                     {data.map((_, idx) => (
                         <button key={idx} onClick={() => setSlide(idx)} className={slide === idx ? "indicator" : "indicator indicator-inactive"}></button>

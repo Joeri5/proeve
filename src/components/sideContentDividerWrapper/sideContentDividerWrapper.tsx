@@ -19,11 +19,11 @@ export default function sideContentDividderWrapperComponent() {
     };
 
   return (
-    <div className="subpageWrapper">
-      <Image src={letterG} className="letter letter_G" />
-      <Image src={letterL} className="letter letter_L" />
-      <Image src={letterU} className="letter letter_U" />
-      <Image src={letterE} className="letter letter_E" />
+    <div>
+      <Image src={letterG} alt="letter" className="letter letter_G" />
+      <Image src={letterL} alt="letter" className="letter letter_L" />
+      <Image src={letterU} alt="letter" className="letter letter_U" />
+      <Image src={letterE} alt="letter" className="letter letter_E" />
       <nav className="homeButton">
         <a onClick={goBack}>⬅ back</a>
       </nav>

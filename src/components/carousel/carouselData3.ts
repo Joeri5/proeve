@@ -1,4 +1,4 @@
-[
+export const slides3 = [
     {
         "src": "https://2022.glue.amsterdam/wp-content/uploads/2021/09/Maria_Blaisse_772-kopie-edit-1-scaled.jpg",
         "alt": "image 1 for carousel",

@@ -46,7 +46,7 @@ body {
   grid-template-columns: 50% 50%;
 }
 
-.pageLayout>h1 {
+.pageLayout h1 {
   padding: 15% 15% 0 15%;
   font-size: 7.5rem;
   font-weight: 500;
@@ -172,11 +172,11 @@ a {
     display: none;
   }
 
-  .pageLayout>img {
+  /* .pageLayout>img {
     display: none;
-  }
+  } */
 
-  .pageLayout>h1 {
+  .pageLayout h1 {
     padding-top: 10rem;
     font-size: 120%;
   }

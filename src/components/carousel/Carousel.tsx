@@ -22,7 +22,7 @@ const Carousel: React.FC<Props> = ({ data }) => {
     }
     // console.log(data);
     return (
-        <article className="pageLayout">
+        <article className="pageLayout carouselWrapper">
             <div>
             {data.map((item, index) => (
                 <h1 key={index} className={slide === index ? "title" : "title title-inactive"}>{item.title}</h1>

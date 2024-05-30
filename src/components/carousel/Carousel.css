@@ -84,28 +84,28 @@
 }
 
 @media screen and (max-width: 700px) {
-    .pageLayout {
+    .carouselWrapper {
         grid-template-areas:
             "g h"
             "k k" !important;
     } 
 
-    .pageLayout> :nth-child(1n) {
+    .carouselWrapper> :nth-child(1n) {
         grid-area: g !important;
     }
 
-    .pageLayout> :nth-child(3n) {
+    .carouselWrapper> :nth-child(3n) {
         grid-area: k !important;
-        padding: 5% 10% 5% 10%;
+        padding: 10% 10% 5% 10%;
     }
 
-    .pageLayout> :nth-child(4n) {
+    .carouselWrapper> :nth-child(4n) {
         grid-area: h !important;
         grid-column: span 2;
         display: flex !important;
     }
 
-    .pageLayout> :nth-child(2n) {
+    .carouselWrapper> :nth-child(2n) {
         display: none;
     }
 }

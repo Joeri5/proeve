@@ -18,7 +18,7 @@
 }
 
 .letter_E {
-    translate: none; rotate: none; scale: none; transform: translate(0px, 80px); bottom: 50%; right: 0px;
+    translate: none; rotate: none; scale: none; transform: translate(0px, 50%); bottom: 50%; right: 0px;
 }
 
 .middle {
@@ -51,4 +51,14 @@
 }
 .homeButton > a:hover {
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 700px) {
+    .letter {
+        display: none;
+    }
+    .top__bottom {
+        top: 25% !important;
+    }
 }

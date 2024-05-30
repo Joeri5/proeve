@@ -43,3 +43,10 @@
     transform: translateX(50%);
 }
 
+@media screen and (max-width: 700px) {
+    .routes__title{
+        white-space: inherit;
+        font-size: 22px;
+    }
+}
+

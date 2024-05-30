@@ -19,7 +19,7 @@ export default function sideContentDividderWrapperComponent() {
     };
 
   return (
-    <div>
+    <div className="subpageWrapper">
       <Image src={letterG} className="letter letter_G" />
       <Image src={letterL} className="letter letter_L" />
       <Image src={letterU} className="letter letter_U" />

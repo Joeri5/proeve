@@ -13,7 +13,7 @@ import letterE from "../../img/GLUE_E.svg"
 
 export default function contentDividderWrapperComponent() {
   return (
-    <div>
+    <div className="subpageWrapper">
       <Image src={letterG} className="letter letter_G" />
       <Image src={letterL} className="letter letter_L" />
       <Image src={letterU} className="letter letter_U" />

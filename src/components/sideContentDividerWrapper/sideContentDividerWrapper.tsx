@@ -14,9 +14,9 @@ import letterE from "../../img/GLUE_E.svg"
 
 export default function sideContentDividderWrapperComponent() {
 
-    const goBack = () => {
-      window.history.back();
-    };
+    // const goBack = () => {
+    //   window.history.back();
+    // };
 
   return (
     <div>
@@ -25,7 +25,7 @@ export default function sideContentDividderWrapperComponent() {
       <Image src={letterU} alt="letter" className="letter letter_U" />
       <Image src={letterE} alt="letter" className="letter letter_E" />
       <nav className="homeButton">
-        <a onClick={goBack}>⬅ back</a>
+        <Link href="/">⬅ home</Link>
       </nav>
       <div className="horizontal-line middle"></div>
       <div className="vertical-line top__bottom"></div>

@@ -66,6 +66,9 @@ const SearchComponent: React.FC = () => {
 
   return (
     <div className="searchForm">
+      <nav className="homeButton">
+        <Link href="/">⬅ home</Link>
+      </nav>
       <section className="searchForm__inputsection">
         <input
           type="text"

@@ -89,6 +89,10 @@
     height: 40px;
   }
   .searchForm__button {
-    padding-top: 5%;
+    padding-top: 0;
   }  
+
+  .searchForm__inputsection {
+    margin-top: 20%;
+  }
 }

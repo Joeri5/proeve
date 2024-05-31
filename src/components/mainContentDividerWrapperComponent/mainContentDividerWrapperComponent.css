@@ -59,7 +59,8 @@
         display: none;
     }
     .top__bottom {
-        top: 25% !important;
+        top: 30% !important;
+        height: 40svh !important;
     }
 }
 
@@ -74,6 +75,6 @@
     }
 
     .top__bottom {
-        height: 40% !important;
+        height: 50svh !important;
     }
 }

@@ -15,7 +15,8 @@
   position: absolute;
   width: 50%;
   height: 50%;
-  mix-blend-mode: overlay; /* Combine background with content */
+  mix-blend-mode: overlay;
+  /* Combine background with content */
 }
 
 .part1 {
@@ -60,17 +61,22 @@
 
 .homepage__layout {
   position: relative;
-  z-index: 1; /* Ensure content is above background */
+  z-index: 1;
+  /* Ensure content is above background */
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--bs-white); /* Set text color */
-  font-size: 22px; /* Set font size */
-  font-family: TWKLausanne, sans-serif; /* Set font family */
-  font-weight: 300; /* Set font weight */
+  color: var(--bs-white);
+  /* Set text color */
+  font-size: 22px;
+  /* Set font size */
+  font-family: TWKLausanne, sans-serif;
+  /* Set font family */
+  font-weight: 300;
+  /* Set font weight */
   opacity: 100%;
   margin: 0;
 }
@@ -141,7 +147,7 @@
   position: absolute;
 }
 
-.titledLinesWrapp{
+.titledLinesWrapp {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -155,15 +161,108 @@
 }
 
 .left-rotate {
-  top:0;
+  top: 0;
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
 
 .right-rotate {
- 
+
   -ms-transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   transform: rotate(-20deg);
+}
+
+@media screen and (max-width: 700px) {
+  .part1 {
+    background-size: 70px;
+    background-position: 10px 10px;
+  }
+
+  .part2 {
+    background-size: 70px;
+    background-position: calc(100% - 10px) 10px;
+  }
+
+  .part3 {
+    background-size: 70px;
+    background-position: 10px calc(100% - 10px);
+  }
+
+  .part4 {
+    background-size: 70px;
+    background-position: calc(100% - 10px) calc(100% - 10px);
+  }
+
+  .searchIcon {
+    top: 1%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+  }
+
+  .horizontal-line.top {
+    top: 65px;
+    left: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .horizontal-line.bottom {
+    bottom: 65px;
+    left: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .titledLines {
+    width: 100%;
+  }
+
+  .left-rotate {
+    top: 0;
+    -ms-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  .right-rotate {
+
+    -ms-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .part1 {
+    background-size: 70px;
+  }
+  
+  .part2 {
+    background-size: 70px;
+  }
+  
+  .part3 {
+    background-size: 70px;
+  }
+  
+  .part4 {
+    background-size: 70px;
+  }
+
+  .searchIcon {
+    width: 50px;
+    height: 50px;
+  }
 }

@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -64,13 +63,23 @@ const SearchComponent: React.FC = () => {
     setResults(searchResults);
   };
 
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <div className="searchForm">
+      <nav className="homeButton">
+        <Link href="/">⬅ home</Link>
+      </nav>
       <section className="searchForm__inputsection">
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyPress={handleKeyPress} // Added event listener for key press
           placeholder="Search. . ."
           className="searchForm__input"
         />

@@ -50,3 +50,10 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .routes__title{
+        /* white-space: inherit; */
+        font-size: 45px;
+    }
+}
+

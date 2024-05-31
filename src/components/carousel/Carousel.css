@@ -96,7 +96,7 @@
 
     .carouselWrapper> :nth-child(3n) {
         grid-area: k !important;
-        padding: 10% 10% 5% 10%;
+        /* padding: 10% 10% 5% 10%; */
     }
 
     .carouselWrapper> :nth-child(4n) {

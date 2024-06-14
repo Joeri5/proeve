@@ -1,3 +1,8 @@
+/**
+ * @author Aidan Middel
+ * @email info@aidanmiddel.nl
+ * @desc these are all the slides of a carousel. in each slide is included: image source, alt text for the image, title of the slide, subtext of the slide
+ */
 export const slides3 = [
     {
         "src": "https://2022.glue.amsterdam/wp-content/uploads/2021/09/Maria_Blaisse_772-kopie-edit-1-scaled.jpg",

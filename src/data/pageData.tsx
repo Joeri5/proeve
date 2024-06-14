@@ -1,3 +1,8 @@
+/**
+ * @author Aidan Middel | Amy van Duin
+ * @email info@aidanmiddel.nl | amyvanduin@outlook.com
+ * @desc this is the file that contains all the data that is included in the page. all titles, images, routes, redirects, sub text, carousels
+ */
 
 /*import data types*/
 import { PageDataProps, SidePageDataProps, InfoPageDataProps } from "./types/pageData.t";

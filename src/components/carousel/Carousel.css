@@ -1,3 +1,9 @@
+/**
+ * @author Aidan Middel
+ * @email info@aidanmiddel.nl
+ * @desc this CSS makes sure all parts of the slides are displayed correctly including some media queries to change up the layout on mobile devices
+ */
+
 .carousel {
     position: relative;
     display: flex;

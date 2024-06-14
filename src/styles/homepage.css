@@ -1,3 +1,9 @@
+/**
+ * @author Aidan Middel | Amy van Duin
+ * @email info@aidanmiddel.nl | amyvanduin@outlook.com
+ * @desc this CSS file contains all the styling for the homepage, including the letter postions, lines, the deviding of the page in 4 blocks, placing of the page navigation headers, and resposivness
+ */
+
 @import "./rootstyles/color.css";
 @import "./rootstyles/borders.css";
 @import "./rootstyles/links.css";

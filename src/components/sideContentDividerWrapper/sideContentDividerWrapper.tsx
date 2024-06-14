@@ -1,3 +1,8 @@
+/**
+ * @author Aidan Middel | Amy van Duin
+ * @email info@aidanmiddel.nl | amyvanduin@outlook.com
+ * @desc this component is a basic wrapper to the sideContentDividerComponent so that all the styling can be used correctly
+ */
 'use client'
 import React from "react"
 import Image from 'next/image';

@@ -1,3 +1,8 @@
+/**
+ * @author Aidan Middel
+ * @email info@aidanmiddel.nl
+ * @desc This code cycles through a given PROP data file and then extracts all slides including title, image, image alt, subtext
+ */
 'use client'
 
 import React, { useState } from "react";

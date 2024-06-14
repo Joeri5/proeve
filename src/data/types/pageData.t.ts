@@ -1,4 +1,8 @@
-/* In deze file defineer je  een object naam die wordt gebruikt in pageData.tsx. Dit moet ej doen voor Nextjs*/
+/**
+ * @author Aidan Middel | Amy van Duin
+ * @email info@aidanmiddel.nl | amyvanduin@outlook.com
+ * @desc In this file you define an object name to be used in pageData.tsx. You need to do this for TypeScript
+ */
 export interface PageDataProps {
     path: string;
     title: string;

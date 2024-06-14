@@ -1,3 +1,8 @@
+/**
+ * @author Aidan Middel | Amy van Duin
+ * @email info@aidanmiddel.nl | amyvanduin@outlook.com
+ * @desc this component is a basic wrapper to the mainContentDivider so that all the styling can be used correctly
+ */
 import React from "react"
 import Image from 'next/image';
 import Link from "next/link";

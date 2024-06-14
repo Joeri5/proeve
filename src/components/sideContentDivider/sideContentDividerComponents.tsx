@@ -1,3 +1,9 @@
+/**
+ * @author Aidan Middel
+ * @email info@aidanmiddel.nl
+ * @desc this component uses the pagedata file to map through all pages and makes sure it displays the correct info provided
+ */
+
 'use client';
 
 import React from "react";
